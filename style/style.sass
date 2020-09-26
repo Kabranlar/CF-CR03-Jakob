@@ -1,0 +1,189 @@
+*
+	margin: 0
+	padding: 0
+
+#content
+	width: 96%
+	height: 100%
+	margin: auto
+
+#headerTop
+	background-color: #FFF3F3
+	display: flex
+	justify-content: space-around
+	align-items: center
+	padding: 10px 0
+
+#headerBottom
+	background-color: #8E1616
+
+#navList
+	list-style: none
+	display: flex
+	padding: .2em 1em
+
+.navElement
+	text-decoration: none
+	font-size: 1.2em
+	color: white
+	padding: 0 .5em
+
+#main
+	width: 100%
+	display: flex
+	flex-direction: column
+
+#teamMain
+	margin: 0 auto
+	width: 80%
+	display: flex
+	justify-content: center
+
+#mainTop
+	position: relative	//als Anker für backgroundImg
+	height: 600px
+
+#backgroundImg
+	position: absolute	//damit sich das Bild wie ein background-image verhält (wird aus dem Flow entfernt)
+	width: 100%
+	height: 100%
+	z-index: -10	//s.o.
+
+#backgroundImg img
+	width: 100%
+	height: 100%
+	object-fit: cover
+
+#calcBox
+	position: absolute	//to make the box "float"
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-around
+	left: 4%
+	bottom: -30px
+	width: 92%
+	height: 500px
+	background-color: rgba(255, 255, 255, .8)
+	border: 2px solid grey
+
+.centerText
+	text-align: center
+
+#calcBoxForm
+	width: 500px
+
+#form
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+
+#form label
+	width: 40%
+
+#mainBottom
+	height: 30%
+	background-color: #CECECE
+
+#mainTextTop
+	color: white
+	font-size: 2.5em
+	padding-left: 25px
+	padding-top: 80px
+
+#mainTextBottom
+	padding-top: 40px
+	padding-bottom: 20px
+	text-align: center
+
+.mainTextBottomStyle
+	font-size: 1.4em
+
+#mainTextBottomBigger
+	font-size: 2em
+
+#calcBoxHeadline
+	font-size: 3em
+
+input
+	width: 160px
+	height: 30px
+
+select
+	width: 164px
+	height: 35px
+
+button
+	background-color: #339235
+	width: 100px
+	height: 40px
+	border-radius: 10px
+	border: none
+	color: white
+
+#calcResult
+	color: #63A25E
+	font-size: 2em
+	padding-bottom: 10px
+	visibility: hidden
+
+#plans
+	display: flex
+	justify-content: space-between
+	width: 90%
+	margin: auto
+	padding: 60px 0
+
+.planBoxes
+	width: 45%
+	border-top: 2px solid black
+	box-shadow: 0 0 5px 0 grey
+
+.innerBox
+	padding: 40px
+
+span
+	color: cyan
+
+.boxHeadline
+	color: #3B6AB5
+	font-size: 1.4em
+
+.boxTextSmall
+	font-size: .9em
+
+.boxTextBold
+	font-weight: bold
+
+.boxText
+	font-size: 1em
+	padding: 5px 0
+
+.boxTextGrey
+	color: grey
+
+hr
+	margin: 10px 0
+	border: none
+	height: 1px
+	background-color: lightgrey
+
+footer
+	background-color: black
+	text-align: center
+	padding: 10px
+
+#footerLogo
+	display: flex
+	justify-content: flex-end
+
+#footerText
+	color: white
+
+@media screen and (max-width: 580px)
+	#plans
+		flex-direction: column
+		align-items: center
+
+	.planBoxes
+		width: 90%

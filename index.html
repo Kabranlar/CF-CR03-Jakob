@@ -2,10 +2,162 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
-	<link rel="stylesheet" href="">
+	<title>CFinsurance</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
 	
+	<div id="content">	<!-- holds all elements -->
+		
+		<header id="header">	<!-- header -->
+			
+			<div id="headerTop">
+				
+				<div id="headerLogo">	<!-- holds logo -->
+					<img src="./img/logo.png" alt="insurance CF logo">
+				</div>
+					
+				<div id="headerBanner">	<!-- holds banner -->
+					<img src="./img/banner.png" alt="">
+				</div>
+
+			</div>
+
+			<div id="headerBottom">	<!-- holds lower header elements -->
+				
+				<nav id="navBar">	<!-- holds nav elements -->
+					
+					<ul id="navList">
+						<li><a class="navElement" href="./index.html" title="Home">Home</a></li>
+						<li><a class="navElement" href="./subpages/team.html" title="Team">Team</a></li>
+					</ul>
+
+				</nav>
+
+			</div>
+
+		</header>
+
+		<main id="main">
+			
+			<div id="mainTop">
+
+				<div id="backgroundImg">
+					<img src="./img/traffic-332857_1920.jpg" alt="">
+				</div>
+				
+				<p id="mainTextTop">Car Insurance</p>
+
+				<div id="calcBox">
+
+					<div id="calcBoxHeadline" class="centerText">
+						<p>Great coverage begins</p>
+						<p>with a custom quote</p>
+					</div>
+
+					<div id="calcBoxForm">
+						<form id="form">
+							<label>Your Name:<br><input id="userName" type="text" name="userName"></label>
+							<label>Age:<br><input id="userAge" type="text" name="userAge"></label>
+							<label>Country:<br>
+								<select id="userCountry" name="userCountry">
+								<option value="Austria">Austria</option>
+								<option value="Hungary">Hungary</option>
+								<option value="Greece">Greece</option>
+								</select>
+							</label>
+							<label>Horsepower of your car:<br><input id="userPs" type="text" name="userPs"></label>
+						</form>
+					</div>
+
+					<div id="button">
+						<button id="generate">Calculate</button>
+					</div>
+
+					<div id="calcResultContainer" class="centerText">
+						<p id="calcResult">I am a placeholder for your result</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="mainBottom">
+
+				<div id="mainTextBottom">
+					<p id="mainTextBottomBigger" class="mainTextBottomStyle">Un-complicating car coverage</p>
+					<p class="mainTextBottomStyle">Understanding your coverage options shouldn't be so hard.</p>
+					<p class="mainTextBottomStyle">We'll guide you through available coverage types,</p>
+					<p class="mainTextBottomStyle">starting with who and what is covered.</p>
+				</div>
+
+			</div>
+
+		</main>
+
+		<div id="plans">
+
+			<div id="leftPlanOuter" class="planBoxes">
+
+				<div id="leftPlanInner" class="innerBox">
+				
+					<p class="boxHeadline">What comes standard</p>
+					<p class="boxTextSmall">The coverage you need</p>
+					<p class="boxText"><span>&#10004;</span>&emsp;Bodily Injury Liability</p>
+					<p class="boxText"><span>&#10004;</span>&emsp;Property Damage</p>
+					<p class="boxText"><span>&#10004;</span>&emsp;Medical Payments</p>
+					<hr>
+					<p class="boxTextBold">Benefits</p>
+					<p class="boxTextGrey">12-month guarantee | 24/7 customer</p>
+					<p class="boxTextGrey">service | Lifetime Repair Guarantee</p>
+
+				</div>
+
+			</div>
+
+			<div id="rightPlanOuter" class="planBoxes">
+
+				<div id="rightPlanInner" class="innerBox">
+				
+					<p class="boxHeadline">Add-on protection & coverage</p>
+					<p class="boxTextSmall">For more peace of mind</p>
+					<p class="boxText"><span>&#10004;</span>&emsp;Better Car Replacement</p>
+					<p class="boxText"><span>&#10004;</span>&emsp;Towing & Labor</p>
+					<p class="boxText"><span>&#10004;</span>&emsp;Rental Car Coverage</p>
+					<hr>
+					<p class="boxTextBold">Earned Benefits</p>
+					<p class="boxTextGrey">Accident Forgiveness&#185; | New Car</p>
+					<p class="boxTextGrey">Replacement&trade;</p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<footer>
+
+			<div id="footerNav">
+
+				<ul id="navList">
+					<li><a class="navElement" href="./index.html" title="Home">Home</a></li>
+					<li><a class="navElement" href="./subpages/team.html" title="Team">Team</a></li>
+				</ul>
+				
+			</div>
+
+			<div id="footerLogo">
+				<img src="./img/logo-inv.png" alt="insurance CF logo">
+			</div>
+
+			<div id="footerText">
+				<p>Jakob - CodeFactory 2018</p>
+			</div>
+
+		</footer>
+
+	</div>
+
+	<script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
